@@ -4,13 +4,11 @@ This project was developed for the **2025 NASA/USDA/CSU Hackathon**, this projec
 The system simulates intelligent, real-time pathfinding using elevation-based terrain analysis, mimicking real-world search-and-rescue missions where optimal paths are unknown, change rapidly, and must be discovered autonomously.
 
 ---
-
 ## Hackathon Prompt
 > **Design an intelligent system to traverse a terrain and provide aid to an incapacitated person in a dynamic, unmarked environment.**  
 > The system must work in both **forest** and **lunar** settings, adapt to real-time changes like fallen trees or shifting terrain, and operate independently—without relying on external control or premarked routes.
 
 ---
-
 ## Features
 - **Custom A\*** Pathfinding: Enhanced A* algorithm with Euclidean distance and terrain resistance based on elevation.
 - **Elevation-Aware Navigation**: Interprets grayscale elevation maps where darker pixels represent higher terrain resistance.
@@ -20,11 +18,9 @@ The system simulates intelligent, real-time pathfinding using elevation-based te
 - **Configurable Missions**: Loads start/end locations via JSON files to simulate different rescue scenarios.
 
 ---
-
 ## Installation
 
 ### Requirements
-
 - Python 3.7 or later  
 - Jupyter Notebook or Google Colab  
 - Python libraries:
@@ -34,9 +30,7 @@ The system simulates intelligent, real-time pathfinding using elevation-based te
   - `json`
 
 ### Setup
-
 Clone the repository and install dependencies:
-
 ```bash
 git clone https://github.com/your-username/Autonomous-Terrain-Navigation-System.git
 cd Autonomous-Terrain-Navigation-System
@@ -45,7 +39,6 @@ pip install pygame numpy pillow
 
 ## Usage
 To run the simulation, execute the main Python script:
-
 ```bash
 python main.py
 ```
@@ -59,7 +52,6 @@ python main.py
 
 ### Configuration
 You can preload specific coordinates by editing config.json:
-
 ```json
 {
   "start": [x1, y1],
@@ -72,7 +64,6 @@ The simulation will automatically use these coordinates if present and valid.
 The system uses shade.tiff, a grayscale elevation map where lighter pixels represent low elevation (easier to traverse) and darker pixels represent high elevation (more resistant). This data directly influences the A* pathfinding cost function.
 
 ## Project Structure
-
 ````markdown
 Autonomous-Terrain-Navigation-System/
 ├── main.py
@@ -107,3 +98,16 @@ For questions, collaboration, or feedback:
 - **Name**: Katie Taylor  
 - **Email**: katietaylorcruz@gmail.com  
 - **GitHub**: [https://github.com/katietay](https://github.com/katietay)
+  
+## Acknowledgments
+This project was developed as part of the 2025 NASA/USDA/CSU Hackathon, organized by CSU DevNet, who brought together partners from NASA and the USDA to create a cross-disciplinary challenge focused on intelligent systems for search and rescue.
+
+Special thanks to the event organizers and mentors for designing an impactful and engaging prompt that pushed us to think critically about real-world autonomous navigation problems.
+
+### Team Members
+- Katie Taylor
+- Alberto Marmolejo-Daher
+- Benjamin Haddad
+- Artemio Tamayo
+
+We also gratefully acknowledge Amazon AWS for providing cloud environments and compute resources that made rapid development and testing possible.
